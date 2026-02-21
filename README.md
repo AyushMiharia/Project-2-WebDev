@@ -9,7 +9,6 @@
 
 **Live Demo:** [https://project-2-webdev.onrender.com](https://project-2-webdev.onrender.com)
 
-**Class Link:** [CS 5610 Web Development](https://neu.edu)
 
 **PPT Link:** [https://docs.google.com/presentation/d/14etu2V-RKHlOub6ergUfdNTo2aOaZrlhQeDa3PqvJ9k/edit?usp=sharing](https://docs.google.com/presentation/d/14etu2V-RKHlOub6ergUfdNTo2aOaZrlhQeDa3PqvJ9k/edit?usp=sharing)
 
