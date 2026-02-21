@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitSync – Connections</title>
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/connections.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-logo">💪 FitSync</a>
+    <ul class="nav-links">
+      <li><a href="/workouts">🏋️ Workouts</a></li>
+      <li><a href="/stats">📊 My Stats</a></li>
+      <li><a href="/connections">🤝 Connections</a></li>
+      <li><a href="/network">📈 Network Stats</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-user" id="navUser"></span>
+      <button class="nav-logout" id="logoutBtn">Sign Out</button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1 class="page-title">🤝 Training Connections</h1>
+      <button class="btn btn-primary" id="newBtn">+ Add Connection</button>
+    </div>
+
+    <details style="margin-bottom:16px">
+      <summary style="cursor:pointer;font-weight:700;color:var(--text-muted);font-size:13px;text-transform:uppercase;letter-spacing:.5px">📖 Instructions</summary>
+      <div style="margin-top:8px;font-size:13px;color:var(--text-muted);line-height:1.7;padding:10px;background:var(--bg);border-radius:8px">
+        Add training partners with their name, gym, training style, how you met, and notes.
+        Click a card to see all workouts you shared with them. Use filters to search your network.
+      </div>
+    </details>
+
+    <div class="filter-bar" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin-bottom:20px;box-shadow:var(--shadow)">
+      <div style="flex:2;min-width:140px"><label>Search</label><input type="text" id="fSearch" placeholder="Name, gym, style..." /></div>
+      <div style="flex:1;min-width:130px"><label>Gym</label>
+        <select id="fGym"><option value="">All Gyms</option>
+          <option>Planet Fitness</option><option>LA Fitness</option><option>Gold's Gym</option>
+          <option>Equinox</option><option>24 Hour Fitness</option><option>YMCA</option><option>Home Gym</option>
+        </select>
+      </div>
+      <div style="flex:1;min-width:140px"><label>Training Style</label>
+        <select id="fStyle"><option value="">All Styles</option>
+          <option>Powerlifting</option><option>Bodybuilding</option><option>CrossFit</option>
+          <option>Calisthenics</option><option>General Fitness</option><option>Olympic Lifting</option>
+        </select>
+      </div>
+      <div style="flex:1;min-width:130px"><label>How Met</label>
+        <select id="fHowMet"><option value="">Any</option>
+          <option>At the gym</option><option>Through a friend</option><option>University rec center</option>
+          <option>Online community</option><option>Sports team</option><option>Personal trainer</option>
+        </select>
+      </div>
+      <button class="btn btn-secondary" id="clearBtn">Clear</button>
+    </div>
+
+    <div id="connectionsList"><div class="loading">Loading connections...</div></div>
+  </div>
+
+  <script type="module" src="/js/siddharth/connections.js"></script>
+</body>
+</html>
