@@ -22,7 +22,7 @@ The project has a clean separation of concerns — **Ayush owns the workout mana
 
 ## Screenshot
 
-> Add a screenshot of the deployed app here after deployment.
+[Home](thumbnail.png)
 
 ---
 
