@@ -22,7 +22,7 @@ The project has a clean separation of concerns — **Ayush owns the workout mana
 
 ## Screenshot
 
-[Home](thumbnail.png)
+(thumbnail2.png)
 
 ---
 
