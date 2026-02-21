@@ -1,14 +1,21 @@
 # 💪 FitSync
 
-**Course:** CS 5610 – Web Development | Northeastern University  
-**Authors:** Ayush Miharia & Siddharth  
-**Project:** Assignment 2 – Full Stack Web Application  
-**Live Demo:** [https://project-2-webdev.onrender.com](https://project-2-webdev.onrender.com)  
-**Class Link:** [CS 5610 Web Development](https://neu.edu)
-**PPT Link:** https://docs.google.com/presentation/d/14etu2V-RKHlOub6ergUfdNTo2aOaZrlhQeDa3PqvJ9k/edit?usp=sharing
-**Document Link:** https://docs.google.com/document/d/1IWRBi0lmoNm89NO3SBCZiThvWAknWOA-v_muZT77rLs/edit?usp=sharing
-**Video Link:** https://drive.google.com/drive/folders/1k4uHcQpoDUxjDVg2dJl4WtkQQoNjkQ80?usp=sharing
 
+**Course:** CS 5610 – Web Development | Northeastern University
+
+**Authors:** Ayush Miharia & Siddharth
+
+**Project:** Assignment 2 – Full Stack Web Application
+
+**Live Demo:** [https://project-2-webdev.onrender.com](https://project-2-webdev.onrender.com)
+
+**Class Link:** [CS 5610 Web Development](https://neu.edu)
+
+**PPT Link:** [https://docs.google.com/presentation/d/14etu2V-RKHlOub6ergUfdNTo2aOaZrlhQeDa3PqvJ9k/edit?usp=sharing](https://docs.google.com/presentation/d/14etu2V-RKHlOub6ergUfdNTo2aOaZrlhQeDa3PqvJ9k/edit?usp=sharing)
+
+**Document Link:** [https://docs.google.com/document/d/1IWRBi0lmoNm89NO3SBCZiThvWAknWOA-v_muZT77rLs/edit?usp=sharing](https://docs.google.com/document/d/1IWRBi0lmoNm89NO3SBCZiThvWAknWOA-v_muZT77rLs/edit?usp=sharing)
+
+**Video Link:** [https://drive.google.com/drive/folders/1k4uHcQpoDUxjDVg2dJl4WtkQQoNjkQ80?usp=sharing](https://drive.google.com/drive/folders/1k4uHcQpoDUxjDVg2dJl4WtkQQoNjkQ80?usp=sharing)
 
 ---
 
@@ -22,7 +29,7 @@ The project has a clean separation of concerns — **Ayush owns the workout mana
 
 ## Screenshot
 
-(thumbnail2.png)
+![Home](thumbnail2.png)
 
 ---
 
