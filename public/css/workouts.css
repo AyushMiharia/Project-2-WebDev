@@ -1,0 +1,20 @@
+/* workouts.css */
+.filter-bar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 20px; box-shadow: var(--shadow); }
+.filter-bar > div { flex: 1; min-width: 140px; }
+.workouts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.workout-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; cursor: pointer; transition: all 0.15s; box-shadow: var(--shadow); }
+.workout-card:hover { border-color: var(--accent); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.workout-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.workout-muscle { font-size: 17px; font-weight: 800; margin-bottom: 6px; }
+.workout-date { font-size: 12px; color: var(--text-muted); }
+.workout-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.workout-exercises { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+.workout-partners { display: flex; gap: 5px; flex-wrap: wrap; }
+.partner-chip { background: #eff6ff; color: #2563eb; border-radius: 20px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+.card-actions { display: flex; gap: 6px; margin-top: 12px; justify-content: flex-end; }
+.exercise-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 30px; gap: 6px; align-items: center; margin-bottom: 6px; }
+.exercise-row .remove-ex { background: #fef2f2; border: none; color: var(--danger); border-radius: 6px; width: 28px; height: 28px; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+.partner-check-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 6px; max-height: 160px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; padding: 8px; background: var(--bg); }
+.partner-check-item { display: flex; align-items: center; gap: 7px; padding: 5px 7px; border-radius: 6px; cursor: pointer; font-size: 13px; }
+.partner-check-item:hover { background: var(--surface); }
+.partner-check-item input { width: auto; cursor: pointer; }

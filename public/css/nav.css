@@ -1,0 +1,24 @@
+/* nav.css */
+.nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow);
+}
+.nav-logo { font-size: 18px; font-weight: 900; color: var(--accent); letter-spacing: -0.5px; margin-right: 16px; text-decoration: none; white-space: nowrap; }
+.nav-logo:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 2px; flex: 1; list-style: none; }
+.nav-links a { color: var(--text-muted); padding: 7px 12px; border-radius: 7px; font-size: 14px; font-weight: 600; transition: all 0.15s; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.nav-links a:hover { color: var(--text); background: var(--bg); text-decoration: none; }
+.nav-links a.active { color: var(--accent); background: #eff6ff; }
+.nav-right { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.nav-user { font-size: 13px; color: var(--text-muted); font-weight: 600; }
+.nav-logout { background: var(--bg); border: 1px solid var(--border); color: var(--text-muted); padding: 5px 12px; border-radius: 7px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+.nav-logout:hover { color: var(--danger); border-color: var(--danger); }

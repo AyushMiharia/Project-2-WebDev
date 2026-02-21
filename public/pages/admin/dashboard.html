@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitSync – Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <style>
+    .stat-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 14px; margin-bottom: 28px; }
+    .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; text-align: center; box-shadow: var(--shadow); }
+    .stat-val { font-size: 32px; font-weight: 900; color: #7c3aed; }
+    .stat-lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { background: var(--bg); padding: 10px 12px; text-align: left; font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; border-bottom: 2px solid var(--border); }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    tr:hover td { background: #faf8ff; }
+    .pagination { display: flex; gap: 8px; justify-content: center; align-items: center; margin-top: 16px; }
+    .pagination span { font-size: 13px; color: var(--text-muted); }
+    .search-row { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; align-items: flex-end; }
+    .search-row input { max-width: 260px; }
+    .del-btn { background: #fef2f2; border: 1px solid #fecaca; color: var(--danger); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+    .del-btn:hover { background: var(--danger); color: #fff; }
+    .record-count { font-size: 13px; color: var(--text-muted); margin-top: 10px; }
+    .avatar-initial { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #7c3aed, #4f46e5); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <span class="nav-logo">🛡️ Admin</span>
+    <ul class="nav-links"></ul>
+    <div class="nav-right">
+      <span style="font-size:13px;color:var(--text-muted)">Admin Portal</span>
+      <button class="nav-logout" id="adminLogout">Sign Out</button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1 class="page-title">👥 Member Management</h1>
+      <span id="liveCount" style="font-size:14px;color:var(--text-muted);font-weight:600"></span>
+    </div>
+
+    <!-- Stats overview -->
+    <div class="stat-cards" id="statCards"><div class="loading">Loading...</div></div>
+
+    <!-- Users table -->
+    <div class="card">
+      <div class="search-row">
+        <div>
+          <label>Search Members</label>
+          <input type="text" id="uSearch" placeholder="Name, email, gym, style..." />
+        </div>
+        <button class="btn btn-primary btn-sm" id="uSearchBtn">Search</button>
+        <button class="btn btn-secondary btn-sm" id="uClearBtn">Clear</button>
+      </div>
+
+      <div id="usersTable"><div class="loading">Loading members...</div></div>
+      <div class="pagination" id="uPager"></div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "fitsync",
+  "version": "1.0.0",
+  "description": "FitSync - Track your workouts, progress, and training partners",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node db/seed.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongodb": "^6.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.3.0"
+  },
+  "license": "MIT"
+}

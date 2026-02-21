@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitSync – Admin Login</title>
+  <link rel="stylesheet" href="/css/global.css" />
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .wrap { width: 100%; max-width: 360px; padding: 20px; }
+    .logo { text-align: center; font-size: 26px; font-weight: 900; color: #7c3aed; margin-bottom: 4px; }
+    .sub { text-align: center; color: var(--text-muted); font-size: 13px; margin-bottom: 28px; }
+    .error-msg { background: #fef2f2; border: 1px solid #fecaca; color: var(--danger); border-radius: 8px; padding: 10px 12px; font-size: 13px; margin-bottom: 14px; display: none; }
+    .back-link { display: block; text-align: center; margin-top: 16px; font-size: 13px; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">🛡️ Admin Portal</div>
+    <p class="sub">FitSync database overview</p>
+    <div class="card">
+      <form id="adminForm">
+        <div class="error-msg" id="adminErr"></div>
+        <div class="form-group"><label>Admin Password</label><input type="password" id="adminPw" placeholder="Enter admin password" required /></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;background:#7c3aed">Access Dashboard</button>
+      </form>
+      <p style="font-size:12px;color:var(--text-muted);margin-top:12px;text-align:center">Default password: <code>admin123</code></p>
+    </div>
+    <a href="/" class="back-link">← Back to home</a>
+  </div>
+  <script type="module">
+    import { api } from "/js/modules/api.js";
+    document.getElementById("adminForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const errEl = document.getElementById("adminErr");
+      errEl.style.display = "none";
+      try {
+        await api.adminLogin(document.getElementById("adminPw").value);
+        window.location.href = "/admin/dashboard";
+      } catch (err) {
+        errEl.textContent = err.message;
+        errEl.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

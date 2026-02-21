@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitSync – Workouts</title>
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/nav.css" />
+  <link rel="stylesheet" href="/css/workouts.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="nav-logo">💪 FitSync</a>
+    <ul class="nav-links">
+      <li><a href="/workouts">🏋️ Workouts</a></li>
+      <li><a href="/stats">📊 My Stats</a></li>
+      <li><a href="/connections">🤝 Connections</a></li>
+      <li><a href="/network">📈 Network Stats</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-user" id="navUser"></span>
+      <button class="nav-logout" id="logoutBtn">Sign Out</button>
+    </div>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1 class="page-title">🏋️ Workouts</h1>
+      <button class="btn btn-primary" id="newBtn">+ New Workout</button>
+    </div>
+
+    <details style="margin-bottom:16px" open>
+      <summary style="cursor:pointer;font-weight:700;color:var(--text-muted);font-size:13px;text-transform:uppercase;letter-spacing:.5px">📖 Instructions</summary>
+      <div style="margin-top:8px;font-size:13px;color:var(--text-muted);line-height:1.7;padding:10px;background:var(--bg);border-radius:8px">
+        Create workouts with date, muscle group, type, duration, and exercises. Add training partners from your connections.
+        Duplicate prevention: same date + muscle group + type will be rejected. Use filters below to search your history.
+      </div>
+    </details>
+
+    <div class="filter-bar">
+      <div><label>Search</label><input type="text" id="fSearch" placeholder="Exercise, notes..." /></div>
+      <div><label>Muscle Group</label>
+        <select id="fMuscle"><option value="">All</option>
+          <option>Chest</option><option>Back</option><option>Legs</option><option>Shoulders</option>
+          <option>Arms</option><option>Core</option><option>Full Body</option><option>Cardio</option>
+        </select>
+      </div>
+      <div><label>Type</label>
+        <select id="fType"><option value="">All</option>
+          <option>Strength</option><option>Cardio</option><option>Flexibility</option><option>HIIT</option><option>Powerlifting</option>
+        </select>
+      </div>
+      <div><label>From</label><input type="date" id="fFrom" /></div>
+      <div><label>To</label><input type="date" id="fTo" /></div>
+      <div><label>Max Duration (min)</label><input type="number" id="fDuration" placeholder="e.g. 60" min="1" /></div>
+      <button class="btn btn-secondary" id="clearBtn">Clear</button>
+    </div>
+
+    <div id="workoutsList"><div class="loading">Loading workouts...</div></div>
+  </div>
+
+  <script type="module" src="/js/ayush/workouts.js"></script>
+</body>
+</html>
