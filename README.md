@@ -265,37 +265,6 @@ Open **http://localhost:3000** in your browser.
 
 ---
 
-## Rubric Compliance Checklist
-
-| Requirement | Points | Status |
-|---|---|---|
-| Design document (project description, user personas, user stories, mockups) | 50 | ✅ |
-| App accomplishes all requirements approved in #project | 15 | ✅ |
-| App is usable with instructions | 5 | ✅ Instructions on every page |
-| App is useful — a real user would use it | 5 | ✅ |
-| ESLint config, no errors thrown | 5 | ✅ `eslint.config.js` |
-| Code properly organized — pages, DB files, CSS in folders | 5 | ✅ |
-| JS organized in Modules | 15 | ✅ `api.js`, `nav.js`, `toast.js`, `modal.js`, `dates.js` |
-| Client-side rendering using only vanilla JavaScript | 15 | ✅ No frameworks |
-| Implements at least 1 form | 15 | ✅ Login, signup, workout, connection forms |
-| Deployed on a public server | 5 | ✅ Render.com |
-| Uses at least 2 Mongo Collections with CRUD | 15 | ✅ `users`, `workouts`, `connections` |
-| Database with 1,000+ records | 5 | ✅ Seed script creates 1,000 users |
-| Uses Node + Express | 5 | ✅ |
-| Formatted using Prettier | 5 | ✅ `.prettierrc` |
-| No non-standard tags for standard components | 5 | ✅ Proper semantic HTML throughout |
-| CSS organized by Modules | 5 | ✅ `global.css`, `nav.css`, `workouts.css`, `connections.css` |
-| Clear and descriptive README | 10 | ✅ This file |
-| No exposed credentials (Mongo user/password) | 10 | ✅ `.env` in `.gitignore` |
-| `package.json` listing all dependencies | 5 | ✅ |
-| MIT license | 5 | ✅ `LICENSE` file |
-| No leftover unused code | 5 | ✅ |
-| No CJS modules (no `require`) | 10 | ✅ All ESM `import/export` |
-| No Mongoose or template engines | 20 | ✅ Native MongoDB driver only |
-| **Total** | **260** | ✅ |
-
----
-
 ## License
 
 MIT — see [LICENSE](./LICENSE)
