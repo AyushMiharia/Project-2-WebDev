@@ -18,7 +18,8 @@
     "mongodb": "^6.6.0"
   },
   "devDependencies": {
-    "eslint": "^9.3.0"
+    "eslint": "^9.3.0",
+    "prettier": "^3.8.1"
   },
   "license": "MIT"
 }
